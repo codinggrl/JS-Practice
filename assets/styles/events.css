@@ -40,3 +40,29 @@ button:active {
 #long-one {
   height: 3000px;
 }
+
+/* event delegation*/
+li {
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+ul {
+  /*removes bullet-points*/
+  list-style: none;
+}
+
+.highlight {
+  background-color: green;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
