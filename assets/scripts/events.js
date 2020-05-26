@@ -48,6 +48,8 @@ div.addEventListener('click', event => {
 
 // bubbling
 button.addEventListener('click', event => {
+  //default behavior still occurs ,but stops ancestor event
+  event.stopPropagation();
   console.log('CLICKED BUTTON');
   console.log(event);
 
