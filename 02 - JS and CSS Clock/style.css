@@ -1,0 +1,140 @@
+    html {
+      font-family: 'helvetica neue';
+      font-size: 10px;
+    }
+
+    body {
+      margin: 0;
+      font-size: 2rem;
+      display: flex;
+      flex: 1;
+      min-height: 100vh;
+      align-items: center;
+    }
+
+    .clock {
+      width: 30rem;
+      height: 30rem;
+      border: 20px solid white;
+      border-radius: 50%;
+      margin: 50px auto;
+      position: relative;
+      padding: 2rem;
+      box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #EFEFEF,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .clock-face {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform: translateY(-15px); /* account for the height of the clock hands */
+    }
+
+
+    .hand {
+      width: 45%;
+      height: 4px;
+      right:50%;
+      background: black;
+      position: absolute;
+      top: 50%;
+      border-radius:50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.42, 0, 0.85, -0.29);
+
+    }
+
+    .hand.second-hand {
+      background: red;
+      height: 2px;
+    }
+
+    .hand.hour-hand {
+      width: 35%;
+      height: 6px;
+    }
+    .clock ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .clock ul li {
+      position:absolute;
+      width:30px;
+      height:30px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 15px;
+      color:red;
+    }
+
+    .clock ul li:nth-child(1){
+    right: 22%;
+    top:6.5%;
+    }
+
+    .clock ul li:nth-child(2){
+        right: 6%;
+        top:25%;
+    }
+
+    .clock ul li:nth-child(3){
+        right: 1%;
+        top:calc(50% - 20px);
+        color:#000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+        .clock ul li:nth-child(4){
+        right: 6%;
+        top:69%;
+    }
+    .clock ul li:nth-child(5){
+        right: 22%;
+        top:84%;
+    }
+    .clock ul li:nth-child(6){
+        right: calc(50% - 20px);
+        top:calc(99% - 25px);
+        color:#000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .clock ul li:nth-child(7){
+        left: 22%;
+        top:84%;
+    }
+    .clock ul li:nth-child(8){
+        left: 6%;
+        top:69%;
+    }
+    .clock ul li:nth-child(9){
+        left: 1%;
+        top:calc(50% - 20px);
+        color:#000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .clock ul li:nth-child(10){
+        left: 6%;
+        top:25%;
+    }
+    .clock ul li:nth-child(11){
+        left: 22%;
+        top:7.5%;
+    }
+    .clock ul li:nth-child(12){
+        right: calc(50% - 20px);
+        top:1%;
+        color:#000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
